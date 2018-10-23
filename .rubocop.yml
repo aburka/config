@@ -1,0 +1,114 @@
+###### Layout Cops #####
+Layout/AccessModifierIndentation:
+  EnforcedStyle: outdent
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+Layout/BlockAlignment:
+  EnforcedStyleAlignWith: start_of_block
+Layout/DefEndAlignment:
+  EnforcedStyleAlignWith: def
+  Severity: fail
+Layout/DotPosition:
+  EnforcedStyle: leading
+Layout/EmptyLineBetweenDefs:
+  AllowAdjacentOneLineDefs: true
+  NumberOfEmptyLines: 1
+Layout/EmptyLinesAroundBlockBody:
+  EnforcedStyle: no_empty_lines
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: no_empty_lines
+Layout/EmptyLinesAroundModuleBody:
+  EnforcedStyle: no_empty_lines
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+Layout/EndOfLine:
+  EnforcedStyle: lf
+Layout/ExtraSpacing:
+  AllowForAlignment: true
+  ForceEqualSignAlignment: false
+Layout/IndentationWidth:
+  Width: 2
+Layout/IndentArray:
+  EnforcedStyle: consistent
+Layout/IndentHash:
+  EnforcedStyle: consistent
+Layout/MultilineArrayBraceLayout:
+  EnforcedStyle: symmetrical
+Layout/MultilineAssignmentLayout:
+  EnforcedStyle: same_line
+Layout/MultilineHashBraceLayout:
+  EnforcedStyle: symmetrical
+Layout/MultilineMethodCallBraceLayout:
+  EnforcedStyle: symmetrical
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/MultilineMethodDefinitionBraceLayout:
+  EnforcedStyle: symmetrical
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+Layout/SpaceAroundBlockParameters:
+  EnforcedStyleInsidePipes: no_space
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: space
+Layout/SpaceAroundOperators:
+  AllowForAlignment: true
+Layout/SpaceBeforeBlockBraces:
+  EnforcedStyle: space
+Layout/SpaceBeforeFirstArg:
+  AllowForAlignment: true
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyleForEmptyBrackets: no_space
+Layout/SpaceInsideBlockBraces:
+  EnforcedStyle: space
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+Layout/SpaceInsideParens:
+  EnforcedStyle: no_space
+Layout/SpaceInsideReferenceBrackets:
+  EnforcedStyle: no_space
+Layout/SpaceInsideStringInterpolation:
+  EnforcedStyle: no_space
+Layout/TrailingBlankLines:
+  EnforcedStyle: final_newline
+Layout/TrailingWhitespace:
+  Enabled: true
+  AllowInHeredoc: falsef
+
+###### Style Cops #####
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/ClassAndModuleChildren:
+  EnforcedStyle: compact
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+Style/HashSyntax:
+  EnforcedStyle: ruby19_no_mixed_keys
+Style/SymbolArray:
+  EnforcedStyle: brackets
+  MinSize: 1
+Style/Documentation:
+  Enabled: false
+Style/WordArray:
+  EnforcedStyle: brackets
+  MinSize: 2
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+Style/NumericLiterals:
+  Enabled: false
+
+##### Metrics Cops #####
+Metrics/LineLength:
+  Max: 120
+  AllowHeredoc: true
+  AllowURI: true
+  URISchemes:
+    - http
+    - https
+Metrics/BlockLength:
+  Max: 30
+  ExcludedMethods:
+    - refine
+    - describe
+    - scenario
+    - it
+    - new
