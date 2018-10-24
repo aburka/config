@@ -116,3 +116,5 @@ Metrics/BlockLength:
     - scenario
     - it
     - new
+Metrics/MethodLength:
+  Max: 20
