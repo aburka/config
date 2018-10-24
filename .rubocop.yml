@@ -96,6 +96,10 @@ Style/EmptyMethod:
 Style/NumericLiterals:
   Enabled: false
 
+##### Linting Cops #####
+Lint/AssignmentInCondition:
+  Enabled: false
+
 ##### Metrics Cops #####
 Metrics/LineLength:
   Max: 120
