@@ -72,7 +72,7 @@ Layout/TrailingBlankLines:
   EnforcedStyle: final_newline
 Layout/TrailingWhitespace:
   Enabled: true
-  AllowInHeredoc: falsef
+  AllowInHeredoc: false
 
 ###### Style Cops #####
 Style/StringLiterals:
@@ -95,6 +95,8 @@ Style/EmptyMethod:
   EnforcedStyle: expanded
 Style/NumericLiterals:
   Enabled: false
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
 
 ##### Linting Cops #####
 Lint/AssignmentInCondition:
