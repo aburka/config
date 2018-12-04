@@ -95,6 +95,10 @@ Style/EmptyMethod:
   EnforcedStyle: expanded
 Style/NumericLiterals:
   Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
 
 ##### Linting Cops #####
 Lint/AssignmentInCondition:
