@@ -95,6 +95,8 @@ Style/EmptyMethod:
   EnforcedStyle: expanded
 Style/NumericLiterals:
   Enabled: false
+Style/ConditionalAssignment:
+  Enforced: assign_inside_condition
 Style/BlockDelimiters:
   EnforcedStyle: braces_for_chaining
 
